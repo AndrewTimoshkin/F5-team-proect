@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://AndrewTimoshkin.github.io/F5-team-proect",
+  "homepage": "https://AndrewTimoshkin.github.io/f5-team-proect",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /F5-team-proect/"
+    "build": "parcel build src/*.html --public-url /f5-team-proect/"
   },
   "repository": {
     "type": "git",
