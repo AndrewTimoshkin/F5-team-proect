@@ -1,7 +1,7 @@
-<section class="about container">
-  <p class="about-label">tradition and love</p>
-  <h2 class="about-header">how it’s made?</h2>
-  <picture class="about-image">
+<div class="container">
+  <p class="about__label">tradition and love</p>
+  <h2 class="about__header">how it’s made?</h2>
+  <picture class="about__image">
     <source
       srcset="./images/mobile/features-1-320.png 1x, ./images/mobile/features-1-320@2x.png 2x"
       media="(min-width: 320px)"
@@ -16,17 +16,17 @@
     />
   </picture>
   <div class="description-wrap">
-    <p class="about-description--black">
+    <p class="about__description--black">
       Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
       eget, egestas eros. Maecenas eleifend erat at justo fringilla.
     </p>
-    <p class="about-description">
+    <p class="about__description">
       Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
       imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
       Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
     </p>
     <input type="checkbox" id="read-more" hidden />
-    <p class="about-description--extra">
+    <p class="about__description--extra">
       Duis dignissim a lorem at interdum. Praesent aliquam, nisl at lobortis mattis, dui diam
       elementum justo, ut hendrerit risus mi id lectus. Donec quis augue nisi. Integer diam tellus,
       finibus eget velit eu, maximus hendrerit augue. Nulla sed lacinia ante. Aliquam feugiat
@@ -37,6 +37,9 @@
       >Read
       <span class="more">more</span>
       <span class="less">less</span>
+      <svg class="icon icon-arrow" width="5" height="8">
+        <use xlink:href="#icon-arrow"></use>
+      </svg>
     </label>
   </div>
-</section>
+</div>

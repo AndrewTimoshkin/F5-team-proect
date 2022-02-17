@@ -4,7 +4,7 @@
   padding-bottom: 39px;
 }
 
-.about-label {
+.about__label {
   font-size: 18px;
   line-height: 1.17;
   text-align: center;
@@ -13,7 +13,7 @@
   margin-bottom: 15px;
 }
 
-.about-header {
+.about__header {
   font-size: 34px;
   line-height: 1.15;
   text-align: center;
@@ -23,14 +23,15 @@
   margin-bottom: 26px;
 }
 
-.about-image {
+.about__image {
   display: block;
 }
 
 .description-wrap {
   padding-left: 30px;
 }
-.about-description--black {
+
+.about__description--black {
   color: #000000;
   margin-bottom: 28px;
   font-weight: 500;
@@ -39,7 +40,7 @@
   width: 220px;
 }
 
-.about-description {
+.about__description {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
@@ -48,7 +49,7 @@
   margin-bottom: 17px;
 }
 
-.about-description--extra {
+.about__description--extra {
   margin-bottom: 17px;
   font-weight: 500;
   font-size: 12px;
@@ -72,6 +73,10 @@
   // align-items: center;
   // text-align: center;
   color: #d41443;
+}
+
+.about__icon {
+  display: block;
 }
 
 .about-description--extra {
