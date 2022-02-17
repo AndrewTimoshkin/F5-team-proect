@@ -1,8 +1,45 @@
-h1, h2, h3, h4, h5, h6, p, a, ul, li, button {
-    padding: 0;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+button {
+  padding: 0;
+  margin: 0;
 }
-a, ul, li {
-    text-decoration: none;
-    list-style: none;
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+@mixin font($fs: 14px, $fw: 700, $lh: 1.5, $ls: 0.04em) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin mob {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
 }
