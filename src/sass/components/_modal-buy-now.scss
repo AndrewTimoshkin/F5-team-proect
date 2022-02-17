@@ -1,3 +1,21 @@
+.modal-window__open {
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    background-color: rgb(0, 119, 255);
+    color: var(--black-text);
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-window__open:hover,
+.modal-window__open:focus {
+    background-color: var(--third-bg-color);
+    outline: transparent;
+    cursor: pointer;
+}
 .backdrop {
     position: fixed;
     top: 0;
@@ -40,7 +58,7 @@
     position: absolute;
     top: 10px;
     right: 8px;
-    color: var(--textcolor-3);
+    color: var(--black-text);
     
     transition-property: color;
     transition-duration: 250ms;
@@ -50,6 +68,7 @@
 .modal-window__close:focus {
     background-color: var(--third-bg-color);
     outline: transparent;
+    cursor: pointer;
 }
 .modal-window__title {
     font-weight: 700;
