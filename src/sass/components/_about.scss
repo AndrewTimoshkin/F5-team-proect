@@ -25,6 +25,9 @@
 
 .about__image {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 46px;
 }
 
 .description-wrap {
@@ -75,15 +78,11 @@
   color: #d41443;
 }
 
-.about__icon {
-  display: block;
-}
-
-.about-description--extra {
+.about__description--extra {
   display: none;
 }
 
-#read-more:checked ~ .about-description--extra {
+#read-more:checked ~ .about__description--extra {
   display: block;
 }
 
