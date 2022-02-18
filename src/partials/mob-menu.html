@@ -1,3 +1,35 @@
-<p>
-    mob-menu
-</p>
+<div class="menu-container js-menu-container menu" id="mobile-menu">
+  <div class="menu-buttons__wrap">
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-close__button" width="14" height="14">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button type="button" class="buy-now__button">
+      Buy now
+      <svg class="buy-now__button-svg" width="8" height="8">
+        <use href="./images/sprite.svg#menu-vector-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="menu-navigation__wrap">
+    <ul class="mobile-menu">
+      <li class="mobile-menu__list">
+        <a class="link mobile-menu__link current-menu" href="./index.html">Home</a>
+      </li>
+      <li class="mobile-menu__list"><a class="link mobile-menu__link" href="">About us</a></li>
+      <li class="mobile-menu__list">
+        <a class="link mobile-menu__link" href="">How it’s made?</a>
+      </li>
+      <li class="mobile-menu__list"><a class="link mobile-menu__link" href="">Our products</a></li>
+      <li class="mobile-menu__list"><a class="link mobile-menu__link" href="">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<script src="./js/menu-togle.js"></script>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
