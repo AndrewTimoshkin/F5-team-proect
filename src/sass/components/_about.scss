@@ -5,21 +5,25 @@
 }
 
 .about__label {
+  font-family: 'Titan One', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--secondary-title);
   margin-bottom: 15px;
 }
 
 .about__header {
+  font-family: 'Titan One', sans-serif;
   font-size: 34px;
+  font-weight: 400;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--accent-color);
   margin-bottom: 26px;
 }
 
