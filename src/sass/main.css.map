@@ -1,9 +1,21 @@
 {
     "version": 3,
-    "mappings": ";AAAA;;;GAGG;ACHH,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,4HAC8B;EAC3C,WAAW,EAAE,GAAG;EAChB,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,KAAK;EAChB,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,QAAQ,CAAC,IAAI,CAAC;EACZ,WAAW,EAAE,SAAS;EACtB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,OAAO;EAChB,aAAa,EAAE,GAAG;CACnB;;AAED,AAAA,QAAQ,CAAC,WAAW,CAAC;EACnB,MAAM,EAAE,KAAK;EAEb,gBAAgB,EAAE,yBAAyB;EAC3C,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;CAC5B",
+    "mappings": "ACAA,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EAAE,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE,MAAM,CAAC;EACzC,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACZ;;AACD,AAAA,CAAC,EAAE,EAAE,EAAE,EAAE,CAAC;EACN,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;CACnB;;ACPD,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CACrB;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAC;IACP,KAAK,EAAE,KAAK;GACf;;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAC;IACP,KAAK,EAAE,KAAK;GACf;;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,UAAU,CAAC;IACP,KAAK,EAAE,MAAM;GAChB;;;AKpBL,AAAA,EAAE,CAAC;EACD,YAAY,EAAE,CAAC;EACf,MAAM,EAAE,CAAC;CACV;;AACD,AAAA,gBAAgB,CAAC;EACf,eAAe,EAAE,IAAI;CACtB",
     "sources": [
         "main.scss",
-        "_example.scss"
+        "utils/_resets.scss",
+        "base/_container.scss",
+        "components/_header.scss",
+        "components/_hero.scss",
+        "components/_products.scss",
+        "components/_about.scss",
+        "components/_advantages.scss",
+        "components/_gallery.scss",
+        "components/_customer-reviews.scss",
+        "components/_contacts.scss",
+        "components/_mob-menu.scss",
+        "components/_modal-buy-now.scss",
+        "components/_modal-locations-franchaise.scss"
     ],
     "names": [],
     "file": "main.css"
