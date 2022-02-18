@@ -1,3 +1,13 @@
+.gallery {
+  background-image: linear-gradient(
+    --accent-color 39.767%,
+    --bg-color 31.1165%,
+    --bg-color 31.1165%
+  );
+  width: 100%;
+  height: 100%;
+}
+
 .gallery__image {
   margin-right: auto;
   margin-left: auto;
