@@ -364,6 +364,7 @@
   }
 
   .hero__right-number {
+    display: block;
     position: relative;
     font-family: Titan One;
     font-style: normal;
@@ -373,6 +374,7 @@
     line-height: 1.3;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    text-align: right;
     z-index: 2;
 
     @media screen and (min-width: 1280px) {
@@ -401,6 +403,7 @@
     color: var(--white-text);
     font-size: 8px;
     line-height: 1.2;
+    text-align: right;
     @media screen and (min-width: 1280px) {
       font-size: 14px;
     }

@@ -5,7 +5,6 @@
     padding-top: 122px;
     padding-bottom: 112px;
   }
-
   @media screen and (min-width: 1280px) {
     padding-top: 127px;
     padding-bottom: 119px;
@@ -32,7 +31,7 @@
   }
 }
 
-// Pproducts
+// Products
 .products__title {
   font-family: 'Titan One', sans-serif;
   font-size: 34px;
@@ -45,13 +44,13 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 48px;
     line-height: 1.14;
-    margin-bottom: 39px;
+    margin-bottom: 150px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.13;
     letter-spacing: 0.06em;
-    margin-bottom: 49px;
+    margin-bottom: 259px;
   }
 }
 
@@ -65,8 +64,16 @@
 }
 
 // Карточки Li
-.products__card:nth-child(3n) {
-  margin-right: 0;
+.products__card:not(:last-child) {
+  margin-bottom: 130px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 .products__card {
   position: relative;
@@ -76,19 +83,16 @@
   @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 280px;
     height: 485px;
-    margin-bottom: 17px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 220px;
     height: 485px;
     width: calc((100% - 20px) / 3);
-    margin-right: 20px;
   }
   @media screen and (min-width: 1280px) {
     width: 329px;
     height: 525px;
     width: calc((100% - 30px) / 3);
-    margin-right: 30px;
   }
 }
 
@@ -107,10 +111,10 @@
 .products__card:last-child {
   background: #c2e297;
 }
-
 .products__images {
   display: flex;
   align-items: center;
+  margin-top: -113px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 249px;
     height: 252px;
