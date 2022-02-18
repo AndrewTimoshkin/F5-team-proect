@@ -1,3 +1,105 @@
-<section class="hero">
-  <p>hero</p>
-</section>
+<section class="hero" id="main">
+  <div class="hero__container container">
+    <div class="hero__container-first">
+      <div class="title hero__title-animation">
+        <h1 class="hero__title rotate-y">
+          ice cream <br />
+          made with
+          <span class="hero__title-accent">passion</span>
+        </h1>
+        <a class="hero__button-products" href="#products">Products</a>
+        <a class="hero__button-about" href="#about">How it’s made?</a>
+      </div>
+
+     <div class="hero__milk">
+        <picture >     
+                 <source
+            srcset="./images/tablet/hero-2-768.png 340w, ./images/tablet/hero-2-768@2x.png 780w"
+            media="(min-width:768px) and (max-width:1079px)"
+            sizes="(min-width:768px) and (max-width:1079px) 340px, 100w"
+          />
+          <source
+            srcset="
+              ./images/desktop/hero-2-1200.png     516w,
+              ./images/desktop/hero-2-1200@2x.png 1032w
+            "
+            media="(min-width:1080px)"
+            sizes="(min-width:1080px) 516px, 100vw"
+          />
+          <img src="./images/tablet/hero-2-768.png" alt="milk" />
+        </picture>
+      <div class="hero__milk-thumb">
+          <p class="hero__milk-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="hero__button-arrow" type="button" data-info-modal-open>
+            <svg width="10" height="10">
+              <use class="hero__icon-arrow" href="./images/sprite.svg#icon-read-more"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  <div class="hero-center">
+    <picture class="hero-center__image">
+<source
+          srcset="
+            ./images/desktop/hero-1-1200.png 1x,
+            ./images/desktop/hero-1-1200@2x.png 2x
+          "
+          media="(min-width:1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/tablet/hero-1-768.png 1x, ./images/tablet/hero-1-768@2x.png 2x"
+          media="(min-width:768px)"
+          type="image/png"
+        />
+        <img
+          srcset="./images/mobile/hero-1-320.png 1x, ./images/mobile/hero-1-320@2x.png 2x"
+          src="./images/mobile/hero-1-320.png"
+          alt="icecream"
+        />     
+    </picture>
+    </div>
+
+      <!-- <div class="title hero__title-animation">
+        <h1 class="hero__title">
+          ice cream <br />
+          made with
+          <span class="hero__title-accent">passion</span>
+        </h1>
+        <a class="hero__button-products" href="#products">Products</a>
+        <a class="hero__button-about" href="#about">How it’s made?</a>
+      </div> -->
+
+
+   <div class="hero__right">
+    <div class="hero__right-container">
+      <span class="hero__right-number">16</span>
+      <p class="hero__right-text">cafes</p>
+    </div>
+    <div class="hero__right-container">
+      <span class="hero__right-number">23</span>
+      <p class="hero__right-text">food trucks</p>
+    </div>
+  </div> 
+<div class="hero__picture-girl" >
+      <picture >
+        <source
+          srcset="./images/tablet/hero-3-768.png 340w, ./images/tablet/hero-3-768@2x.png 780w"
+          media="(min-width:768px) and (max-width:1079px)"
+          sizes="(min-width:768px) and (max-width:1079px) 340px, 100vw"
+        />
+        <source
+          srcset="./images/desktop/hero-3-1200.png 516w, ./images/desktop/hero-3-1200@2x.png 1032w"
+          media="(min-width:1080px)"
+          sizes="(min-width:1080px) 516px, 100vw"
+        />
+        <img src="./images/tablet/hero-3-768.png" alt="girl eats ice cream" />
+      </picture>
+    </div>
+  </div>
+</div>
+  </section>
