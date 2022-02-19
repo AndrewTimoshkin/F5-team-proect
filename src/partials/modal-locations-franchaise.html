@@ -12,4 +12,69 @@
     </div>
   </div>
 </div>
+<button type="button" class="modal-window__open" franchise-modal-open>Open Franchise</button>
+<div class="modal-backdrop is-hidden" franchise-modal>
+  <div class="modal-franchise-window">
+    <button type="button" class="modal-window__close" franchise-modal-close></button>
+    <p class="modal-window__title">REQUEST INFO !</p>
+    <div class="franchise-wrap">
+      <p class="franchise__text">
+        Get started on your journey to business ownership with ICECREAM today by filling out the
+        form below!
+      </p>
+      <form action="#">
+        <div class="modal__forms">
+          <label class="label-franchise__text" for="user-name">First Name *</label>
+          <div class="franchise-input__thumb">
+            <input type="text" name="user-name" id="user-name" class="franchise-input-form" />
+          </div>
+          <label class="label-franchise__text" for="user-name">Last Name *</label>
+          <div class="franchise-input__thumb">
+            <input type="text" name="user-name" id="user-name" class="franchise-input-form" />
+          </div>
+          <label class="label-franchise__text" for="user-email">Email *</label>
+          <div class="franchise-input__thumb">
+            <input type="email" name="user-email" id="user-email" class="franchise-input-form" />
+          </div>
+          <label class="label-franchise__text" for="user-tel">Phone *</label>
+          <div class="franchise-input__thumb">
+            <input type="tel" name="user-tel" id="user-tel" class="franchise-input-form" />
+          </div>
+          <label class="label-franchise__text" for="user-city">City *</label>
+          <div class="franchise-input__thumb">
+            <input type="text" name="user-city" id="user-city" class="franchise-input-form" />
+          </div>
+          <label class="label-franchise__text" for="user-appointment">Best time to call *</label>
+          <div class="franchise-input__thumb">
+            <input
+              type="text"
+              name="user-appointment"
+              id="user-appointment"
+              class="franchise-input-form"
+            />
+          </div>
+          <label class="label-franchise__text" for="user-finance"
+            >Do you and/or partners have $250,000 net worth?*
+          </label>
+          <div class="franchise-input__thumb">
+            <input type="text" name="user-finance" id="user-finance" class="franchise-input-form" />
+          </div>
+          <label class="label-franchise__text" for="user-assets"
+            >Do you and/or partners have $90,000 in liquid assets? *
+          </label>
+          <div class="franchise-input__thumb">
+            <input type="text" name="user-assets" id="user-assets" class="franchise-input-form" />
+          </div>
+        </div>
+      </form>
+      <p class="franchise__text">
+        By submitting your information
+        <span class="franchise-agreement__accent">you have agreed</span> to receive a Text Message
+        or a Phone Call from our franchising team.
+      </p>
+      <button class="franchise-submit__button" type="submit">Submit</button>
+    </div>
+  </div>
+</div>
 <script src="./js/togle-map.js"></script>
+<script src="./js/togle-franchise.js"></script>
