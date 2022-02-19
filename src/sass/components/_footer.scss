@@ -1,25 +1,8 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: #FFF5F6;
+  background-color: var(--secondary-bg-color);
   min-width: 320px;
-}
-.conteiner {
-  width: 480px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (min-width: 768px) {
-  width: 768px;
-  padding-left: 36px;
-  padding-right: 36px;
-  }
-
-  @media screen and (min-width: 1280px) {
-  width: 1280px;
-  padding-left: 114px;
-  padding-right: 116px;
-  }
 }
 
 .footer__box {
@@ -27,9 +10,6 @@
 
   @media screen and (min-width:768px) {
     display: flex;
-  }
-
-    @media screen and (min-width:1280px) {
   }
 }
 
@@ -59,7 +39,7 @@
   font-family: Titan One;
   font-size: 18px;
   line-height: 21px;
-  color: #FFA5BA;
+  color: var(--secondary-title);
   width: 232px;
   margin: 0;
 
@@ -83,7 +63,7 @@
   font-size: 34px;
   line-height: 39px;
   letter-spacing: 0.04em;
-  color: #D41443;
+  color: var(--accent-color);
   display: block;
   width: 200px;
   margin-top: 17px;
@@ -124,20 +104,23 @@
 .social__item {
   width: 32px;
   height: 32px;
-  background-color:  #FEA5BB;
   border-radius: 50%;
+
+  background-color:  var(--secondary-title);
+  
   margin-right: 28.24px;
+
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background-color:  #D41443;
+    background-color:  var(--accent-color);
   }
 
   &:last-child {
-  margin-right: 0;
+    margin-right: 0;
   }
 
   @media screen and (min-width: 768px) {
@@ -151,6 +134,28 @@
   }
 }
 
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+@media screen and (min-width:768px) {
+    width: 34px;
+    height: 34px;
+
+}
+}
+
+
+
+.social__icon {
+  fill: currentColor;
+  color: white;
+
+}
 .contact {
   display: flex;
   justify-content: flex-end;
@@ -159,7 +164,7 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 22px;
-  color: #D41443;
+  color: var(--accent-color);
   padding-bottom: 43px;
 
   @media screen and (min-width: 768px) {
@@ -176,7 +181,7 @@
 }
 
 .contact__text {
-  color: #000000;
+  color: var(--black-text);
 }
 
 .cellar {
@@ -198,7 +203,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  color: #907E82;
+  color: var(--grey-text);
   width: 150px;
   margin: 0;
   padding-top: 22px;
