@@ -32,7 +32,7 @@
   height: 20px;
   &:hover,
   &:focus {
-    fill: #ffffff;
+    fill: var(--white-text);
   }
   margin: 0;
   padding: 0;
@@ -51,7 +51,7 @@
     display: none;
   }
   height: 100vh;
-  z-index: 999;
+  z-index: 7;
   background-color: #e17992;
   display: flex;
   flex-direction: column;
@@ -73,13 +73,13 @@
 .mobile-menu__link {
   &:hover,
   &:focus {
-    color: #d41443;
+    color: var(--accent-color);
     outline: none;
   }
   text-align: inherit;
   text-decoration: none;
   @include font(14px, 700, 1.29, 0);
-  color: #ffffff;
+  color: var(--white-text);
   min-height: 40px;
   display: block;
   max-width: 208px;
@@ -105,8 +105,8 @@
   margin-right: auto;
   border-radius: 22px;
   @include font(16px, 700, 1.31, 0);
-  background-color: #ffffff;
-  color: #d41443;
+  background-color: var(--white-text);
+  color: var(--accent-color);
   outline: none;
   border: none;
   position: relative;
@@ -123,6 +123,6 @@
 }
 
 .buy-now__button-svg {
-  fill: #d41443;
+  fill: var(--accent-color);
   margin-left: 15px;
 }
