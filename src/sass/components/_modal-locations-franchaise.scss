@@ -1,0 +1,127 @@
+.modal_container {
+  opacity: 0;
+  pointer-events: none;
+  min-height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: fixed;
+  top: 93px;
+  padding: 20px;
+}
+
+.modal_container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal-location__button-close {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  color: var(--black-text);
+  transition: color var(--timing-function);
+}
+
+.map__frame {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-window__title {
+  color: var(--title-text);
+}
+
+.modal-franchise-window {
+  width: 90%;
+  min-height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 30px;
+  padding: 20px;
+}
+
+.franchise__text {
+  text-align: center;
+  min-width: 234px;
+  max-width: 234px;
+  margin-bottom: 20px;
+  @include font(12px, 400, 1.11, 0.02);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.franchise-input__thumb {
+  margin-bottom: 10px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.label-franchise__text {
+  @include font(12px, 400, 1.11, 0.02);
+  max-width: 230px;
+  display: block;
+  @include mob {
+    max-width: 100%;
+  }
+}
+
+.franchise-submit__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.franchise-submit__button {
+  min-width: 180px;
+  max-width: 180px;
+  min-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 22px;
+  @include font(16px, 700, 1.21, 0.02);
+  background-color: var(--accent-color);
+  color: var(--white-text);
+  outline: none;
+  border: none;
+  position: relative;
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-accent-color);
+  }
+}
+
+.franchise-input-form {
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+  border: 1px solid var(--black-text);
+  border-radius: 2px;
+  width: 100%;
+}
+
+.franchise-agreement__accent {
+  color: var(--accent-color);
+}
