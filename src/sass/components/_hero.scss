@@ -2,12 +2,13 @@
   position: relative;
   background-color: var(--third-bg-color);
   height: 500px;
+  max-width: 100%;
 
   @media screen and (min-width: 768px) {
     height: 400px;
   }
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px) {
     height: 665px;
   }
 
@@ -27,9 +28,9 @@
       height: 400px;
       justify-content: space-between;
     }
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1280px) {
       padding-top: 140px;
-      max-width: 1280px;
+      max-width: 1200px;
       height: 665px;
     }
   }
@@ -41,14 +42,14 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px) {
     align-items: flex-start;
   }
 }
 .hero__title-animation {
-  max-width: 270px;
+  max-width: 270px;  
   z-index: 5;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     padding-top: 137px;
   }
 }
@@ -347,7 +348,7 @@
   position: absolute;
   right: 35px;
   top: 94px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
