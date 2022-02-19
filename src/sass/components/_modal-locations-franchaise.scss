@@ -125,3 +125,28 @@
 .franchise-agreement__accent {
   color: var(--accent-color);
 }
+
+.modal-franchise-window__close {
+  height: 24px;
+  width: 24px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    outline: none;
+    .menu-close__button {
+      transform: scale(1.1);
+    }
+  }
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  fill: red;
+}
+
+.franchise-close__button {
+  fill: red;
+  color: red;
+}
