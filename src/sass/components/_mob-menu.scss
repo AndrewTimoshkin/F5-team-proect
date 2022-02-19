@@ -74,6 +74,7 @@
   &:hover,
   &:focus {
     color: #d41443;
+    outline: none;
   }
   text-align: inherit;
   text-decoration: none;
@@ -84,6 +85,7 @@
   max-width: 208px;
   margin: auto;
   padding: 10px 0;
+  transition: color var(--timing-function);
 }
 
 .mobile-menu__list {
@@ -112,6 +114,7 @@
   &:focus {
     background-color: #ecebeb;
   }
+  transition: background-color var(--timing-function);
 }
 
 .menu-buttons__wrap {
