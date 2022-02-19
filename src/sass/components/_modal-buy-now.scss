@@ -58,7 +58,7 @@
     position: absolute;
     top: 10px;
     right: 8px;
-    color: var(--black-text);
+    color: black;
     
     transition-property: color;
     transition-duration: 250ms;
@@ -69,6 +69,9 @@
     background-color: var(--third-bg-color);
     outline: transparent;
     cursor: pointer;
+}
+.modal-window__close-icon {
+    fill: currentColor;
 }
 .modal-window__title {
     font-weight: 700;
