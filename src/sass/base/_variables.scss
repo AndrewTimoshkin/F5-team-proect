@@ -4,6 +4,7 @@
   --grey-text: #907e82;
 
   --secondary-title: #ffa5ba;
+  --title-text: #d41443;
 
   --bg-color: #ffffff;
   --secondary-bg-color: #fff5f6;
@@ -15,5 +16,7 @@
   --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
-  
+  font-family: "DM Sans";
+  color: var(--black-text);
+  background-color: #ffffff;
 }

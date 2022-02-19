@@ -1,3 +1,15 @@
-<p>
-    modal-buy-now
-</p>
+<button type="button" class="modal-window__open" data-modal-open>
+    OPEN MODAL BTN
+</button>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+        <button type="button" class="modal-window__close" data-modal-close>
+            <svg class="modal-window__close-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-close-modal"></use>
+            </svg>
+        </button>
+        <p class="modal-window__title">Оставьте свои данные, мы вам перезвоним
+        </p>
+    </div>
+</div>
+<script src="../src/js/modal-buy-now.js"></script>

@@ -1,0 +1,161 @@
+.about {
+  background-color: #fff5f6;
+  padding-top: 125px;
+  padding-bottom: 39px;
+  position: relative;
+  background-image: url('../../src/images/mobile/moloko-mobile-small-1x.png'),
+    url('../../src/images/mobile/moloko-mobile-big-1x.png');
+  background-repeat: no-repeat;
+  background-position: left 766px, right 766px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../../src/images/mobile/moloko-mobile-small-2x.png'),
+      url('../../src/images/mobile/moloko-mobile-big-2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+    background-image: none;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 39px;
+    background-image: url('../../src/images/desktop/moloko-desktop-small-1x.png'),
+      url('../../src/images/desktop/moloko-desktop-big-1x.png');
+    background-repeat: no-repeat;
+    background-position: left 342px, right 342px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../../src/images/desktop/moloko-desktop-small-2x.png'),
+        url('../../src/images/desktop/moloko-desktop-big-2x.png');
+    }
+  }
+}
+
+.about__label {
+  font-family: 'Titan One', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-title);
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+}
+
+.about__header {
+  font-family: 'Titan One', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 50px;
+  }
+}
+
+.about__flex-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 46px;
+  max-width: 100%;
+  height: auto;
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+  }
+}
+
+.about__description-wrap {
+  padding-left: 30px;
+}
+
+.about__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  width: 220px;
+  color: var(--grey-text);
+  margin-bottom: 17px;
+}
+
+.about__description--black {
+  @extend .about__description;
+  color: var(--black-text);
+  margin-bottom: 28px;
+}
+
+.about__description--additional {
+  @extend .about__description;
+  margin-bottom: 20px;
+}
+
+.about__description--extra {
+  @extend .about__description;
+  margin-bottom: 17px;
+}
+
+.read-more {
+  border: none;
+  background-color: var(--white-text);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  width: 176px;
+  height: 44px;
+  position: relative;
+  display: block;
+  color: var(--accent-color);
+  padding-top: 12px;
+  padding-left: 43px;
+}
+
+.read-more::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  background-image: url('../../src/images/icons/red-arrow.svg');
+  position: absolute;
+  top: 16px;
+  right: 37px;
+}
+
+.about__description--extra {
+  display: none;
+}
+
+#read-more:checked ~ .about__description--extra {
+  display: block;
+}
+
+.less {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: inline;
+}
