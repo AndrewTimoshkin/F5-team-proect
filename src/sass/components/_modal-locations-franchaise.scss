@@ -57,7 +57,7 @@
 .modal-franchise-window {
   width: 90%;
   min-height: 200px;
-  background-color: #ffffff;
+  background-color: #fff5f6;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -120,6 +120,7 @@
   @include desk {
     @include font(16px, 400, 1.11, 0.02);
   }
+  pointer-events: none;
 }
 
 .franchise-submit__button {
@@ -146,6 +147,23 @@
   transition: background-color var(--timing-function);
 }
 
+.modals-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  @include tab {
+    margin-bottom: 20px;
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+  @include desk {
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+}
+
 .modal__forms {
   display: flex;
   flex-direction: column;
@@ -161,50 +179,6 @@
     flex-basis: calc(100% / 2 - 15px);
     margin-top: 15px;
     margin-left: 15px;
-  }
-}
-
-.modals-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -15px;
-  margin-left: -15px;
-  @include tab {
-    margin-bottom: 20px;
-  }
-  @include desk {
-    margin-bottom: 20px;
-  }
-}
-
-.modal__forms {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  width: 100%;
-  @include tab {
-    flex-basis: calc(100% / 2 - 15px);
-    margin-top: 15px;
-    margin-left: 15px;
-  }
-  @include desk {
-    flex-basis: calc(100% / 2 - 15px);
-    margin-top: 15px;
-    margin-left: 15px;
-  }
-}
-
-.modals-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -15px;
-  margin-left: -15px;
-  @include tab {
-    margin-bottom: 20px;
-  }
-  @include desk {
-    margin-bottom: 20px;
   }
 }
 
@@ -213,10 +187,23 @@
   &:focus {
     border: 1px solid var(--accent-color);
     outline: transparent;
+    background-color: var(--white-text);
   }
-  border: 1px solid var(--black-text);
-  border-radius: 2px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   width: 100%;
+  background-color: rgba(33, 33, 33, 0.04);
+  cursor: pointer;
+  transition: border-color var(--timing-function);
+  transition: background-color var(--timing-function);
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: var(--accent-color);
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .franchise-agreement__accent {
