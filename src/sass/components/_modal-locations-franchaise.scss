@@ -177,6 +177,37 @@
   }
 }
 
+.modal__forms {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 100%;
+  @include tab {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  @include desk {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}
+
+.modals-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -15px;
+  @include tab {
+    margin-bottom: 20px;
+  }
+  @include desk {
+    margin-bottom: 20px;
+  }
+}
+
 .franchise-input-form {
   &:hover,
   &:focus {
