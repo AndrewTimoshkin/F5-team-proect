@@ -126,9 +126,7 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
-
-.franchise-submit__button {
+  cursor: pointer;
   min-width: 180px;
   max-width: 180px;
   min-height: 40px;
@@ -145,6 +143,7 @@
   &:focus {
     background-color: var(--secondary-accent-color);
   }
+  transition: background-color var(--timing-function);
 }
 
 .modal__forms {
@@ -200,6 +199,7 @@
   border: 1px solid var(--accent-color);
   border-radius: 50%;
   cursor: pointer;
+  transition: transform var(--timing-function);
   &:hover,
   &:focus {
     transform: scale(1.1);
