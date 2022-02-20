@@ -248,3 +248,93 @@
     padding-top: 32px;
   }
 }
+
+.contacts__btn-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 54px;
+  padding-bottom: 113px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 82px;
+    padding-bottom: 165px;
+  }
+}
+
+.contacts__btn-location {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  width: 162px;
+  height: 44px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: #d41342;
+  border-radius: 4px;
+  border: 0px;
+  border-radius: 22px;
+  margin-bottom: 10px;
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: #c7133e;
+  }
+  @media screen and (min-width: 768px) {
+    width: 190px;
+    height: 44px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+    height: 44px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+  }
+}
+
+.contacts__btn-franchise {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  width: 162px;
+  height: 44px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #d41443;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 0px;
+  border-radius: 22px;
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+  @media screen and (min-width: 768px) {
+    width: 175px;
+    height: 44px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 44px;
+  }
+}
+
+.contacts__btn-location {
+  fill: #ffffff;
+}
+
+.contacts__btn-franchise {
+  fill: #d41342;
+}
