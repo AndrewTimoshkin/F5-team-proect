@@ -83,7 +83,6 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
-
     width: 230px;
 
     color: #000000;
@@ -91,6 +90,7 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.74;
+      width: auto;
     }
     @media screen and (min-width: 1280px) {
       font-size: 16px;
@@ -102,7 +102,6 @@
     font-family: Titan One;
     font-style: normal;
     font-weight: 400;
-
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
