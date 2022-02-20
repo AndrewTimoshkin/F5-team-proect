@@ -1,0 +1,139 @@
+.container-header {
+  position: relative;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.box-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left:0;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+    padding-right: 5px;
+    padding-left: 5px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
+
+.nav-menu__list {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.nav-menu__item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-menu__link {
+  text-decoration: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: var(--white-text);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__menu-toggle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 0;
+    top: 10px;
+    right: 15px;
+
+    background-color: transparent;
+    border: none;
+  }
+
+  .header__menu-toggle {
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  .header__menu-toggle__icon {
+    fill: var(--white-text);
+  }
+
+  .container-header .button-buy {
+    display: none;
+    @media screen and (min-width: 768px) {
+      width: 160px;
+      height: 44px;
+      padding-left: 38px;
+      padding-right: 53px;
+      display: inline-block;
+      margin-left: 30px;
+      padding-top: 10px;
+    }
+    @media screen and (min-width: 1080px) {
+      margin-left: 0px;
+    }
+  }
+
+  .button-buy {
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    padding-right: 62px;
+    padding-left: 44px;
+    height: 44px;
+    width: 186px;
+    background: var(--white-text);
+    border-radius: 22px;
+    font-family: DM Sans;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+    color: var(--accent-color);
+   
+  }
+  
+  .button-buy {
+    margin-left: 0;
+  }
+
+  
+  
+
+
+// .button-container {
+//     &.is-open {
+//       opacity: 0;
+//     }
+//   }
+
+
+
+
+  
+
+  
