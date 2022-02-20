@@ -282,6 +282,11 @@
   transition: color 250ms linear;
   transition: background-color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &:hover,
   &:focus {
     background: #c7133e;
@@ -317,6 +322,11 @@
   transition: color 250ms linear;
   transition: background-color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &:hover,
   &:focus {
     background: #ecebeb;
