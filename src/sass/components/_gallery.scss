@@ -5,20 +5,20 @@
 }
 
 .gallery__image {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 320px) {
     margin-left: -20px;
-    width: 288px;
+    width: 100%;
     flex: 1 1 100%;
   }
   @media screen and (min-width: 768px) {
     margin-left: -20px;
-    width: 620px;
+    width: 100%;
 
     flex: 1 1 100%;
   }
   @media screen and (min-width: 1280px) {
     margin-left: auto;
-    width: 1010px;
+    width: 100%;
 
     flex: 1 1 100%;
   }
