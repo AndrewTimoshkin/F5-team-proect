@@ -7,17 +7,19 @@
 .gallery__image {
   @media screen and (max-width: 480px) {
     margin-left: -20px;
-    width: 287px;
-    height: 122px;
+    width: 288px;
+    flex: 1 1 100%;
   }
   @media screen and (min-width: 768px) {
-    margin-left: -10px;
+    margin-left: -20px;
     width: 620px;
-    height: 264px;
+
+    flex: 1 1 100%;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: -20px;
+    margin-left: auto;
     width: 1010px;
-    height: 430px;
+
+    flex: 1 1 100%;
   }
 }
