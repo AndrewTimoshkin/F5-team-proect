@@ -49,6 +49,23 @@
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
+    @media screen and (min-width:350px) and (max-width:479px) {
+        width: 315px;
+    }
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media screen and (min-width:1280px) {
+        width: 528px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 .modal-window__close {
     width: 30px;
@@ -206,7 +223,6 @@ border-radius: 4px;
     .policy-condition {
         font-size: 14px;
         line-height: calc(24/14);
-        letter-spacing: 0.03em;
     }
 }
 

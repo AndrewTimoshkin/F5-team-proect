@@ -1,9 +1,9 @@
 <p>modal-locations-franchaise</p>
 <button type="button" class="modal-window__open" location-modal-open>open modal</button>
 <div class="map-modal-backdrop is-hidden" location-modal>
-  <div class="modal-window">
+  <div class="modal-map-window">
     <button type="button" class="modal-franchise-window__close" location-modal-close><svg class="franchise-close__button" width="14px" height="14px">
-        <use href="./images/sprite.svg#icon-close-modal""></use>
+        <use href="./images/symbol-defs.svg#icon-close-modal""></use>
       </svg></button>
     <p class="modal-window__title">Find us here!</p>
     <div class="map__wrap">
@@ -12,6 +12,26 @@
         src="https://www.google.com/maps/d/embed?mid=1uGgB3DNH41t-DZrDIubuC76tUDFVXtDA&ehbc=2E312F"
       ></iframe>
     </div>
+    <div class="map-address-text__wrap">
+      <div class="map-address__thumb">
+      <p class="map-address-text">3965 S Western Ave, Los Angeles</p>
+      <svg class="map-address__icon">
+        <use href="./images/symbol-defs.svg#restaurant""></use>
+      </svg>
+      </div>
+      <div class="map-address__thumb">
+      <p class="map-address-text">902 West Armitage, Chicago</p>
+      <svg class="map-address__icon">
+        <use href="./images/symbol-defs.svg#restaurant""></use>
+      </svg>
+      </div>
+       <div class="map-address__thumb">
+      <p class="map-address-text">182 Ralph Avenue, Brooklyn, NY</p>
+      <svg class="map-address__icon">
+        <use href="./images/symbol-defs.svg#restaurant""></use>
+      </svg>
+      </div>
+    </div>
   </div>
 </div>
 <button type="button" class="modal-window__open" franchise-modal-open>Open Franchise</button>
@@ -19,7 +39,7 @@
   <div class="modal-franchise-window">
     <button type="button" class="modal-franchise-window__close" franchise-modal-close>
       <svg class="franchise-close__button" width="14px" height="14px">
-        <use href="./images/sprite.svg#icon-close-modal""></use>
+        <use href="./images/symbol-defs.svg#icon-close-modal""></use>
       </svg>
     </button>
     <p class="modal-window__title">REQUEST INFO !</p>
@@ -33,31 +53,31 @@
         <div class="modal__forms">
           <label class="label-franchise__text" for="user-name">First Name *</label>
           <div class="franchise-input__thumb">
-            <input type="text" name="user-name" id="user-name" class="franchise-input-form" />
+            <input required type="text" placeholder="John" name="user-name" id="user-name" class="franchise-input-form" />
           </div>
         </div>
         <div class="modal__forms">
           <label class="label-franchise__text" for="user-name">Last Name *</label>
           <div class="franchise-input__thumb">
-            <input type="text" name="user-name" id="user-name" class="franchise-input-form" />
+            <input  required type="text" placeholder="Doe" name="user-name" id="user-name" class="franchise-input-form" />
           </div>
         </div>  
         <div class="modal__forms">
           <label class="label-franchise__text" for="user-email">Email *</label>
           <div class="franchise-input__thumb">
-            <input type="email" name="user-email" id="user-email" class="franchise-input-form" />
+            <input required type="email" placeholder="johndoe@emaildomain.com" name="user-email" id="user-email" class="franchise-input-form" />
           </div>
         </div>
         <div class="modal__forms">
           <label class="label-franchise__text" for="user-tel">Phone *</label>
           <div class="franchise-input__thumb">
-            <input type="tel" name="user-tel" id="user-tel" class="franchise-input-form" />
+            <input required type="tel" placeholder="+1 432-212-3456" name="user-tel" id="user-tel" class="franchise-input-form" />
           </div>
         </div>
         <div class="modal__forms">  
           <label class="label-franchise__text" for="user-city">City *</label>
           <div class="franchise-input__thumb">
-            <input type="text" name="user-city" id="user-city" class="franchise-input-form" />
+            <input type="text" placeholder="San Diego, California" name="user-city" id="user-city" class="franchise-input-form" />
           </div>
         </div>  
         <div class="modal__forms">  
@@ -65,6 +85,7 @@
           <div class="franchise-input__thumb">
             <input
               type="text"
+              placeholder="Monday-Friday after 7pm"
               name="user-appointment"
               id="user-appointment"
               class="franchise-input-form"
@@ -76,7 +97,7 @@
             >Do you and/or partners have $250,000 net worth?*
           </label>
           <div class="franchise-input__thumb">
-            <input type="text" name="user-finance" id="user-finance" class="franchise-input-form" />
+            <input type="text" placeholder="Yes" name="user-finance" id="user-finance" class="franchise-input-form" />
           </div>
         </div>  
         <div class="modal__forms">
@@ -84,7 +105,7 @@
             >Do you and/or partners have $90,000 in liquid assets? *
           </label>
           <div class="franchise-input__thumb">
-            <input type="text" name="user-assets" id="user-assets" class="franchise-input-form" />
+            <input type="text" placeholder="Yes" name="user-assets" id="user-assets" class="franchise-input-form" />
           </div>
         </div>  
         </div>
