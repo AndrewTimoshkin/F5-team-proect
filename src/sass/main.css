@@ -420,10 +420,13 @@ body {
 }
 
 
-.hero__button-products:hover, .hero__button-products:focus {
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: var(--secondary-accent-color);
+.hero__button-products:hover,
+.hero__button-products:focus {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--accent-color);
   background-color: var(--white-text);
   border: 1px;
 }
@@ -633,7 +636,6 @@ body {
   line-height: 39px;
   letter-spacing: 0.04em;
   color: #d41443;
-
   display: block;
   width: 344px;
   height: 344px;
@@ -753,7 +755,6 @@ body {
 .social__item:hover,
 .social__item:focus {
   background-color: #d41443;
-
 }
 
 .hero__picture-girl {
@@ -786,7 +787,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -797,7 +797,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -3134,4 +3133,5 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
 
