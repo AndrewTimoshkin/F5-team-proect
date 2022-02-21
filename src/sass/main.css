@@ -595,6 +595,7 @@ body {
 .hero-center {
   position: absolute;
   top: 0;
+  right: 0;
   width: 100%;
   max-width: 480px;
   height: 500px;
@@ -615,6 +616,7 @@ body {
     max-width: 1280px;
     height: 665px;
     pointer-events: none;
+    right: 0;
   }
 }
 
@@ -644,7 +646,7 @@ body {
 @media screen and (min-width: 1280px) {
   .hero-center::before {
     top: 52px;
-    left: 375px;
+    left: 450px;
     width: 538px;
     height: 538px;
     -webkit-animation: pulsing 5s 1;
@@ -659,7 +661,7 @@ body {
   z-index: 2;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .hero-center__image {
     top: 94px;
     left: 130px;
@@ -676,7 +678,7 @@ body {
 @media screen and (min-width: 1280px) {
   .hero-center__image {
     top: 108px;
-    left: 494px;
+    left: 600px;
   }
 }
 
@@ -718,8 +720,8 @@ body {
   .hero__picture-girl {
     display: block;
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 0px;
     z-index: 5;
   }
 }
@@ -3206,10 +3208,18 @@ body {
 .data-name {
   display: block;
   font-size: 12px;
-  line-height: calc(16/14);
+  line-height: calc(14/12);
   letter-spacing: 0.01em;
   color: #50484a;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .data-name {
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.01em;
+  }
 }
 
 .data-name-block {
@@ -3283,6 +3293,18 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .order-details {
+    width: 293px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-details {
+    width: 383px;
+  }
+}
+
 .order-details__taste {
   display: block;
 }
@@ -3296,6 +3318,19 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .order-details__item {
+    width: 142px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-details__item {
+    width: 187px;
+    height: 28px;
+  }
+}
+
 .user-feedback {
   display: block;
   font-size: 12px;
@@ -3303,6 +3338,14 @@ body {
   letter-spacing: 0.01em;
   color: #50484a;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .user-feedback {
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.01em;
+  }
 }
 
 .user-feedback-field {
@@ -3355,7 +3398,7 @@ body {
           align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1279px) {
   .policy-condition {
     font-size: 14px;
     line-height: calc(24/14);
@@ -3421,6 +3464,7 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .modal--button:hover,
