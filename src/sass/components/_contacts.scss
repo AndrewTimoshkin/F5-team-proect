@@ -340,7 +340,6 @@
   transition: color 250ms linear;
   transition: background-color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +348,7 @@
   &:focus {
     background: #ecebeb;
     cursor: pointer;
+
   }
   @media screen and (min-width: 768px) {
     width: 175px;
@@ -375,3 +375,4 @@
 .contacts__icon-franchise {
   margin-left: 13px;
 }
+
