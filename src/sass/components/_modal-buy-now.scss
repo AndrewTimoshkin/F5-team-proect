@@ -7,7 +7,7 @@
     background: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
-    z-index: 10;
+    z-index: 299;
     overflow: scroll;
 }
 .is-hidden {
@@ -23,14 +23,11 @@
     border-radius: 4px;
     
     position: absolute;
-    // top: 40px;
     padding: 40px 20px 20px 20px;
-    z-index: 10;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
     @media screen and (min-width:350px) and (max-width:479px) {
         width: 315px;
     }
@@ -80,11 +77,16 @@
 .data-name {
     display: block;
     font-size: 12px;
-    line-height: calc(16/14);
+    line-height: calc(14/12);
     letter-spacing: 0.01em;
 
     color: #50484a;
     margin-bottom: 10px;
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.01em;
+    }
 }
 .data-name-block {
     position: relative;
@@ -129,21 +131,32 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width:480px) {
+        width: 293px; 
+    }
+    @media screen and (min-width:768px) {
+        width: 383px; 
+    }
 }
 .order-details__taste {
     display: block;
 }
 
 .order-details__item {
-display: block;
-margin-top: 4px;
-width: 120px;
-height: 20px;
+    display: block;
+    margin-top: 4px;
+    width: 120px;
+    height: 20px;
 
-border: 1px solid #d414447c;
-border-radius: 4px;
-
-
+    border: 1px solid #d414447c;
+    border-radius: 4px;
+    @media screen and (min-width:480px) {
+        width: 142px; 
+    }
+    @media screen and (min-width:768px) {
+        width: 187px; 
+        height: 28px;
+    }
 }
 
 .user-feedback {
@@ -155,6 +168,11 @@ border-radius: 4px;
     color: #50484a;
 
     margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.01em;
+    }
 }
 .user-feedback-field {
     width: 100%;
@@ -195,7 +213,7 @@ border-radius: 4px;
     display: flex;
     align-items: center;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1279px) {
     .policy-condition {
         font-size: 14px;
         line-height: calc(24/14);
@@ -245,6 +263,7 @@ border-radius: 4px;
     transition-property: background, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .modal--button:hover,
 .modal--button:focus {

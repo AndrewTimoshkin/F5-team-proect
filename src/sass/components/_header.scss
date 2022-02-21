@@ -19,12 +19,15 @@
   z-index: 99;
   @media screen and (min-width: 768px) {
     padding-top: 38px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 34px;
+    padding-left: 34px;
     max-width: 768px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    padding-right: 54px;
+    padding-left: 54px;
+    padding-bottom: 74px;
   }
 }
 
@@ -65,16 +68,38 @@
     right: 15px;
 
     border: none;
-    @media screen and (max-width: 767px) {
+   
+
+
+    @media screen and (min-width: 768px) {
       position: absolute;
+      margin-right:200px;
+      padding-top: 40px;
+      .is-hidden {
+        opacity: 0;
+        pointer-events: pointer;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+      }
+
     }
     @media screen and (min-width: 1280px) {
       display: none;
     }
   }
 
+  
+
   .header__menu-toggle__icon {
     fill: var(--white-text);
+    .is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
   }
 
   .container-header .button-buy {
@@ -110,8 +135,9 @@
     font-size: 16px;
     line-height: calc(21 / 16);
     color: var(--accent-color);
-   
+    
   }
+
   
   .button-buy {
     margin-left: 0;

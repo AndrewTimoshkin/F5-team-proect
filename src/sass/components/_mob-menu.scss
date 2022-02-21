@@ -25,19 +25,18 @@
   right: 28px;
 }
 
+
 .header__menu-toggle {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  background-color: black;
+  // background-color: black;
   width: 20px;
   height: 20px;
   &:hover,
   &:focus {
     fill: var(--white-text);
   }
-  margin: 0;
-  padding: 0;
 }
 
 .menu-container {
@@ -85,6 +84,9 @@
   min-height: 40px;
   display: block;
   max-width: 208px;
+  @include tab {
+    max-width: 186px;
+  }
   margin: auto;
   padding: 10px 0;
   transition: color var(--timing-function);
@@ -102,6 +104,10 @@
   margin: 60px 20px 20px 20px;
   min-width: 208px;
   max-width: 208px;
+  @include tab {
+    min-width: 186px;
+    max-width: 186px;
+  }
   min-height: 44px;
   margin-left: auto;
   margin-right: auto;
