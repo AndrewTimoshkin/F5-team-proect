@@ -35,6 +35,26 @@
   background-size: contain;
   background-image: url('..//images/icons/icon-milk.png');
   margin-bottom: 16px;
+  animation: animate_motion 5s 0.1s both infinite;
+  @keyframes animate_motion {
+    0%,
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+    10%,
+    14%,
+    18%,
+    2%,
+    6% {
+      transform: translate3d(-7px, 0, 0);
+    }
+    12%,
+    16%,
+    4%,
+    8% {
+      transform: translate3d(7px, 0, 0);
+    }
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
   }
