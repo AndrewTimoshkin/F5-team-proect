@@ -2,29 +2,39 @@
   background: linear-gradient(to top, white 60%, #fff5f6 40%);
 }
 .grid {
-  width: 480px;
+  /*width: 288px;*/
 
   margin: 0 auto;
 
   display: grid;
 
-  grid-template-columns: repeat(7, 55px);
-  grid-template-rows: repeat(9, 20px);
+  grid-template-columns: repeat(7, 39.4px);
+  grid-template-rows: repeat(9, 11.77px);
   column-gap: 2px;
   row-gap: 2px;
   list-style: none;
 
+   @media screen and (min-width: 480px) {
+    grid-template-columns: repeat(7, 60.28px);
+    grid-template-rows: repeat(9, 18.16px);
+    column-gap: 3px;
+    row-gap: 3px;
+   }
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(7, 85px);
-    grid-template-rows: repeat(9, 25.6px);
+    grid-template-columns: repeat(7, 85.14px);
+    grid-template-rows: repeat(9, 25.77px);
     column-gap: 4px;
     row-gap: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   @media screen and (min-width: 1280px) {
-    grid-template-columns: repeat(7, 138px);
-    grid-template-rows: repeat(9, 42px);
+    grid-template-columns: repeat(7, 139.14px);
+    grid-template-rows: repeat(9, 42.44px);
     column-gap: 6px;
     row-gap: 6px;
+    padding-left: 23px;
+    padding-right: 23px;
   }
 }
 .grid__item:nth-child(1) {
@@ -71,33 +81,27 @@
   height: 100%;
   transform: scale(1);
 }
-@keyframes scales {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 .grid__icon {
-  width: 61px;
-  height: 61px;
-  border-radius: 15px;
+  width: 39.4px;
+  height: 39.4px;
+  border-radius: 14%;
   transition-property: transform;
   object-fit: cover;
+  
+  @media screen and (min-width: 480px) {
+    width: 60.28px;
+    height: 60.28px;
+  }
 
   @media screen and (min-width: 768px) {
-    width: 85px;
-    height: 85px;
+    width: 85.14px;
+    height: 85.14px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 138px;
-    height: 138px;
+    width: 139.14px;
+    height: 139.14px;
   }
   &:hover,
   &:focus {
@@ -107,14 +111,19 @@
   }
 }
 .grid__icon-4 {
-  width: 124px;
-  height: 124px;
+  width: 80.8px;
+  height: 80.8px;
+  border-radius: 7%;
+   @media screen and (min-width: 480px) {
+    width: 123.56px;
+    height: 123.56px;
+  }
   @media screen and (min-width: 768px) {
-    width: 175px;
-    height: 175px;
+    width: 174.28px;
+    height: 174.28px;
   }
   @media screen and (min-width: 1280px) {
-    width: 283px;
-    height: 283px;
+    width: 284.28px;
+    height: 284.28px;
   }
 }
