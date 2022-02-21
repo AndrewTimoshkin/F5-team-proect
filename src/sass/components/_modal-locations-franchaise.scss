@@ -11,6 +11,39 @@
   padding: 20px;
 }
 
+.map-modal-backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 299;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--timing-function), visibility var(--timing-function);
+}
+
+.modal-map-window {
+  width: 90%;
+  min-height: 200px;
+  background-color: #fff5f6;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  padding: 40px 20px 20px 20px;
+  @include mob {
+    max-width: 420px;
+  }
+  @include tab {
+    max-width: 640px;
+  }
+  @include desk {
+    max-width: 1100px;
+  }
+}
+
 .modal_container.show {
   pointer-events: auto;
   opacity: 1;
@@ -36,36 +69,106 @@
   width: 100%;
   height: 50vh;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.map-address-text {
+  font-size: 12px;
+  @include mob {
+    font-size: 14px;
+  }
+
+  @include tab {
+    font-size: 14px;
+  }
+  @include desk {
+    font-size: 14px;
+    margin-right: 40px;
+  }
 }
 
 .modal-window__title {
   color: var(--title-text);
 }
+.map-address__thumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @include desk {
+    justify-content: flex-start;
+    &:not(:last-child) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.map-address-text__wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  @include desk {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.map-address__icon {
+  fill: var(--accent-color);
+  width: 30px;
+  height: 30px;
+}
 
 .modal-franchise-window {
   width: 90%;
   min-height: 200px;
-  background-color: #ffffff;
+  background-color: #fff5f6;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  top: 30px;
-  padding: 20px;
+  top: 40px;
+  padding: 40px 20px 20px 20px;
+  @include mob {
+    max-width: 420px;
+  }
+  @include tab {
+    max-width: 640px;
+  }
+  @include desk {
+    max-width: 900px;
+  }
 }
 
 .franchise__text {
   text-align: center;
-  min-width: 234px;
-  max-width: 234px;
+  width: 234px;
   margin-bottom: 20px;
   @include font(12px, 400, 1.11, 0.02);
   margin-right: auto;
   margin-left: auto;
+  @include tab {
+    @include font(16px, 400, 1.11, 0.02);
+    width: 450px;
+  }
+  @include desk {
+    @include font(16px, 400, 1.11, 0.02);
+    width: 450px;
+  }
 }
 
 .franchise-input__thumb {
   margin-bottom: 10px;
+  @include tab {
+    margin-bottom: 0;
+  }
+  @include desk {
+    margin-bottom: 0;
+  }
 }
 
 .modal-backdrop {
@@ -77,6 +180,8 @@
   background: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
+  z-index: 299;
+  transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
 .label-franchise__text {
@@ -86,15 +191,21 @@
   @include mob {
     max-width: 100%;
   }
+  @include tab {
+    @include font(16px, 400, 1.11, 0.02);
+    max-width: 350px;
+  }
+  @include desk {
+    @include font(16px, 400, 1.11, 0.02);
+  }
+  pointer-events: none;
 }
 
 .franchise-submit__button {
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
-
-.franchise-submit__button {
+  cursor: pointer;
   min-width: 180px;
   max-width: 180px;
   min-height: 40px;
@@ -111,17 +222,93 @@
   &:focus {
     background-color: var(--secondary-accent-color);
   }
+  transition: background-color var(--timing-function);
+}
+
+.modals-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  @include tab {
+    margin-bottom: 20px;
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+  @include desk {
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+}
+
+.modal__forms {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 100%;
+  @include tab {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  @include desk {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-top: 15px;
+    margin-left: 15px;
+  }
 }
 
 .franchise-input-form {
+  &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
+    outline: transparent;
+    background-color: var(--white-text);
   }
-  border: 1px solid var(--black-text);
-  border-radius: 2px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   width: 100%;
+  background-color: rgba(33, 33, 33, 0.04);
+  cursor: pointer;
+  transition: border-color var(--timing-function);
+  transition: background-color var(--timing-function);
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: var(--accent-color);
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .franchise-agreement__accent {
   color: var(--accent-color);
+  font-weight: 700;
+}
+
+.modal-franchise-window__close {
+  height: 24px;
+  width: 24px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform var(--timing-function);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    outline: none;
+    .menu-close__button {
+      transform: scale(1.1);
+    }
+  }
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
