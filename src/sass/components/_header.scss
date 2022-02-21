@@ -72,9 +72,6 @@
 
 
     @media screen and (min-width: 768px) {
-      position: absolute;
-      margin-right:200px;
-      padding-top: 40px;
       .is-hidden {
         opacity: 0;
         pointer-events: pointer;
@@ -107,13 +104,13 @@
     @media screen and (min-width: 768px) {
       width: 160px;
       height: 44px;
-      padding-left: 38px;
-      padding-right: 53px;
+      // padding-left: 38px;
+      // padding-right: 53px;
       display: inline-block;
       margin-left: 30px;
-      padding-top: 10px;
+      // padding-top: 10px;
     }
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1280px) {
       margin-left: 0px;
     }
   }
@@ -122,8 +119,8 @@
     display: inline-block;
     justify-content: center;
     position: relative;
-    padding-right: 62px;
-    padding-left: 44px;
+    // padding-right: 62px;
+    // padding-left: 44px;
     height: 44px;
     width: 186px;
     background: var(--white-text);
@@ -135,24 +132,11 @@
     font-size: 16px;
     line-height: calc(21 / 16);
     color: var(--accent-color);
-    
-  }
-
-  
-  .button-buy {
     margin-left: 0;
   }
-
-  
-  
-
-
-// .button-container {
-//     &.is-open {
-//       opacity: 0;
-//     }
-//   }
-
+.button__icon {
+  margin-left: 12px;
+}
 
 
 
