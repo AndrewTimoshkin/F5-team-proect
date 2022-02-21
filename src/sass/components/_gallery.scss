@@ -1,9 +1,8 @@
 .gallery {
   background: linear-gradient(to top, white 60%, #fff5f6 40%);
+  display: flex;
 }
 .grid {
-  /*width: 288px;*/
-
   margin: 0 auto;
 
   display: grid;
@@ -14,12 +13,12 @@
   row-gap: 2px;
   list-style: none;
 
-   @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     grid-template-columns: repeat(7, 60.28px);
     grid-template-rows: repeat(9, 18.16px);
     column-gap: 3px;
     row-gap: 3px;
-   }
+  }
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(7, 85.14px);
     grid-template-rows: repeat(9, 25.77px);
@@ -88,7 +87,7 @@
   border-radius: 14%;
   transition-property: transform;
   object-fit: cover;
-  
+
   @media screen and (min-width: 480px) {
     width: 60.28px;
     height: 60.28px;
@@ -114,7 +113,7 @@
   width: 80.8px;
   height: 80.8px;
   border-radius: 7%;
-   @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 123.56px;
     height: 123.56px;
   }
