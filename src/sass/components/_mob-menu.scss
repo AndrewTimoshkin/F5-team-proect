@@ -25,6 +25,20 @@
   right: 28px;
 }
 
+
+.header__menu-toggle {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  // background-color: black;
+  width: 20px;
+  height: 20px;
+  &:hover,
+  &:focus {
+    fill: var(--white-text);
+  }
+}
+
 .menu-container {
   position: fixed;
   top: 0;
