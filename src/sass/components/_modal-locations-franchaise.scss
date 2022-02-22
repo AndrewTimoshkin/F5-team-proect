@@ -31,16 +31,19 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  top: 40px;
+  // top: 40px;
+  top: 10%;
   padding: 40px 20px 20px 20px;
   @include mob {
     max-width: 420px;
   }
   @include tab {
     max-width: 640px;
+    top: 13%;
   }
   @include desk {
     max-width: 1100px;
+    top: 17%;
   }
 }
 
@@ -131,16 +134,19 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  top: 40px;
+  top: 10%;
+
   padding: 40px 20px 20px 20px;
   @include mob {
     max-width: 420px;
   }
   @include tab {
     max-width: 640px;
+    top: 17%;
   }
   @include desk {
     max-width: 900px;
+    top: 17%;
   }
 }
 
