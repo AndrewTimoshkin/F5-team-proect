@@ -19,12 +19,15 @@
   z-index: 99;
   @media screen and (min-width: 768px) {
     padding-top: 38px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 34px;
+    padding-left: 34px;
     max-width: 768px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    padding-right: 54px;
+    padding-left: 54px;
+    padding-bottom: 74px;
   }
 }
 
@@ -65,16 +68,35 @@
     right: 15px;
 
     border: none;
-    @media screen and (max-width: 767px) {
-      position: absolute;
+   
+
+
+    @media screen and (min-width: 768px) {
+      .is-hidden {
+        opacity: 0;
+        pointer-events: pointer;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+      }
+
     }
     @media screen and (min-width: 1280px) {
       display: none;
     }
   }
 
+  
+
   .header__menu-toggle__icon {
     fill: var(--white-text);
+    .is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
   }
 
   .container-header .button-buy {
@@ -82,13 +104,13 @@
     @media screen and (min-width: 768px) {
       width: 160px;
       height: 44px;
-      padding-left: 38px;
-      padding-right: 53px;
+      // padding-left: 38px;
+      // padding-right: 53px;
       display: inline-block;
       margin-left: 30px;
-      padding-top: 10px;
+      // padding-top: 10px;
     }
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1280px) {
       margin-left: 0px;
     }
   }
@@ -97,8 +119,8 @@
     display: inline-block;
     justify-content: center;
     position: relative;
-    padding-right: 62px;
-    padding-left: 44px;
+    // padding-right: 62px;
+    // padding-left: 44px;
     height: 44px;
     width: 186px;
     background: var(--white-text);
@@ -110,23 +132,11 @@
     font-size: 16px;
     line-height: calc(21 / 16);
     color: var(--accent-color);
-   
-  }
-  
-  .button-buy {
     margin-left: 0;
   }
-
-  
-  
-
-
-// .button-container {
-//     &.is-open {
-//       opacity: 0;
-//     }
-//   }
-
+.button__icon {
+  margin-left: 12px;
+}
 
 
 
