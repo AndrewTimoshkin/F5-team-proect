@@ -73,7 +73,7 @@
   @include tab {
     max-width: 186px;
   }
-  margin: auto;
+  margin-left: 20px;
   padding: 10px 0;
   transition: color var(--timing-function);
 }
@@ -95,8 +95,7 @@
     max-width: 186px;
   }
   min-height: 44px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
   border-radius: 22px;
   @include font(16px, 700, 1.31, 0);
   background-color: var(--white-text);
