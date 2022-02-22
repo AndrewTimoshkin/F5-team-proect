@@ -113,14 +113,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.data-name__field:focus {
+.data-name__field:focus,
+.data-name__field:hover {
     border: 1px solid #D41443;
     outline: transparent;
 }
 .data-name__field::placeholder {
     color:#a72042ab;
 }
-.data-name__field:focus +.data-name__icon {
+.data-name__field:focus +.data-name__icon,
+.data-name__field:hover +.data-name__icon {
     fill: #D41443;
 }
 .order-details__block {
@@ -171,6 +173,7 @@
     &:focus {
         border: 1px solid #D41443;
         outline: transparent;
+        color: #D41443;
     }   
     @media screen and (min-width:480px) {
         width: 142px; 
