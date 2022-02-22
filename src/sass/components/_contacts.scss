@@ -11,9 +11,11 @@
 
 .contacts {
   background: linear-gradient(to top, rgba(255, 245, 246, 1) 95%, #ffffff 5%);
+  padding-bottom: 113px;
 
   @media screen and (min-width: 768px) {
     background: linear-gradient(to top, rgba(255, 245, 246, 1) 90%, #ffffff 10%);
+    padding-bottom: 165px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -93,7 +95,6 @@
 }
 
 .contacts__item-title {
-  font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
@@ -119,7 +120,6 @@
 }
 
 .contacts__item-title-foodtruck {
-  font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
@@ -145,7 +145,6 @@
 }
 
 .contacts__item-location {
-  font-family: DM Sans;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.8;
@@ -165,7 +164,6 @@
 }
 
 .contacts__item-content {
-  font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -199,7 +197,6 @@
 }
 
 .contacts__item-days {
-  font-family: DM Sans;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.8;
@@ -215,7 +212,6 @@
 }
 
 .contacts__item-hours {
-  font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
@@ -241,7 +237,6 @@
 }
 
 .contacts__item-link {
-  font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -270,14 +265,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 54px;
-  padding-bottom: 113px;
+  margin-top: 54px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 82px;
-    padding-bottom: 165px;
+    margin-top: 82px;
+  }
+}
+
+.btn-location {
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin-right: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0px;
+    margin-right: 15px;
   }
 }
 
@@ -295,7 +300,6 @@
   border-radius: 4px;
   border: 0px;
   border-radius: 22px;
-  margin-bottom: 10px;
   transition: color 250ms linear;
   transition: background-color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -312,14 +316,10 @@
   @media screen and (min-width: 768px) {
     width: 190px;
     height: 44px;
-    margin-bottom: 0px;
-    margin-right: 15px;
   }
   @media screen and (min-width: 1280px) {
     width: 198px;
     height: 44px;
-    margin-bottom: 0px;
-    margin-right: 15px;
   }
 }
 
@@ -367,7 +367,9 @@
 }
 
 .contacts__icon-location {
-  margin-left: 8px;
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
 }
 
 .contacts__icon-franchise {
