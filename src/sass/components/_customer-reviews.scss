@@ -1,9 +1,3 @@
-// html,
-// body {
-//   position: relative;
-//   height: 100%;
-// }
-
 .swiper {
   position: relative;
 
@@ -12,6 +6,15 @@
 
   padding-top: 80px;
   padding-bottom: 86px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 28px;
+    padding-bottom: 132px;
+  }
 }
 
 .swiper-slide {
@@ -36,15 +39,17 @@
   align-items: center;
 }
 
-// .swiper-slide img {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
 .swiper-notification {
   width: 40px;
   height: 40px;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -56,21 +61,49 @@
   width: 12.4px;
   height: 12px;
 }
-// .customer__item {
-//   display: block;
-// }
+
 .customer__photo {
   width: 85px;
   height: 85px;
   margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 }
+
 .review__wrapper {
   position: relative;
 
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 32px;
   padding-top: 43px;
+  padding-bottom: 20px;
+
+  background-color: #fafafa;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    padding-bottom: 28px;
+
+    width: 620px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+
+    width: 926px;
+  }
 
   &::before {
     content: '';
@@ -83,43 +116,63 @@
     background-size: 54px, 40px;
     left: 60px;
     top: 28px;
+
+    @media screen and (min-width: 768px) {
+      left: 40px;
+      top: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 50px;
+      top: 32px;
+    }
   }
 }
 .customer__text {
   position: relative;
   z-index: 4;
 
-  background-color: #fafafa;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 
-  background: repeating-linear-gradient(#e1e1e1 1px, transparent 2px, transparent 31px);
-  background-position: 0 29px;
+  background: repeating-linear-gradient(#e1e1e1, transparent 1px, transparent 31px);
+  background-position: 0 23px;
   background-size: cover;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 2.16;
+  font-size: 12px;
+  line-height: 2.55;
   text-align: center;
   letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
-    width: 620px;
+    width: 460px;
+    font-size: 14px;
+    line-height: 2.16;
+    background-position: 0 25px;
   }
   @media screen and (min-width: 1280px) {
-    width: 926px;
+    width: 750px;
+    font-size: 16px;
+    line-height: 1.86;
   }
 }
 .customer__name {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 42px;
+  margin-top: 52px;
   position: relative;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.86;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 42px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 34px;
+  }
 
   &::before {
     content: '';
@@ -130,7 +183,11 @@
     background-image: url(../images/icons/dots.svg);
     background-size: 32px, 4px;
     left: 50%;
-    bottom: 40px;
+    bottom: 45px;
     transform: translateX(-50%);
+
+    @media screen and (min-width: 768px) {
+      bottom: 36px;
+    }
   }
 }

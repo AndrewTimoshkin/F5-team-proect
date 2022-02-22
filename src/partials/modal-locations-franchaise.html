@@ -1,8 +1,10 @@
 <div class="map-modal-backdrop is-hidden" location-modal>
   <div class="modal-map-window">
-    <button type="button" class="modal-franchise-window__close" location-modal-close><svg class="franchise-close__button" width="14px" height="14px">
+    <button type="button" class="modal-franchise-window__close" location-modal-close>
+      <svg class="franchise-close__button" width="14px" height="14px">
         <use href="./images/symbol-defs.svg#icon-close-modal"></use>
-      </svg></button>
+      </svg>
+    </button>
     <p class="modal-window__title">Find us here!</p>
     <div class="map__wrap">
       <iframe
@@ -12,22 +14,22 @@
     </div>
     <div class="map-address-text__wrap">
       <div class="map-address__thumb">
-      <p class="map-address-text">3965 S Western Ave, Los Angeles</p>
-      <svg class="map-address__icon">
-        <use href="./images/symbol-defs.svg#restaurant"></use>
-      </svg>
+        <p class="map-address-text">3965 S Western Ave, Los Angeles</p>
+        <svg class="map-address__icon">
+          <use href="./images/symbol-defs.svg#foodtruck"></use>
+        </svg>
       </div>
       <div class="map-address__thumb">
-      <p class="map-address-text">902 West Armitage, Chicago</p>
-      <svg class="map-address__icon">
-        <use href="./images/symbol-defs.svg#restaurant""></use>
-      </svg>
+        <p class="map-address-text">902 West Armitage, Chicago</p>
+        <svg class="map-address__icon">
+          <use href="./images/symbol-defs.svg#restaurant"></use>
+        </svg>
       </div>
-       <div class="map-address__thumb">
-      <p class="map-address-text">182 Ralph Avenue, Brooklyn, NY</p>
-      <svg class="map-address__icon">
-        <use href="./images/symbol-defs.svg#foodtruck""></use>
-      </svg>
+      <div class="map-address__thumb">
+        <p class="map-address-text">182 Ralph Avenue, Brooklyn, NY</p>
+        <svg class="map-address__icon">
+          <use href="./images/symbol-defs.svg#restaurant"></use>
+        </svg>
       </div>
     </div>
   </div>
@@ -36,87 +38,136 @@
   <div class="modal-franchise-window">
     <button type="button" class="modal-franchise-window__close" franchise-modal-close>
       <svg class="franchise-close__button" width="14px" height="14px">
-        <use href="./images/symbol-defs.svg#icon-close-modal""></use>
+        <use href="./images/symbol-defs.svg#icon-close-modal"></use>
       </svg>
     </button>
     <p class="modal-window__title">REQUEST INFO !</p>
     <div class="franchise-wrap">
       <p class="franchise__text">
-        Get started on your journey to business ownership with <span class="franchise-agreement__accent">ICECREAM</span> today by filling out the
-        form below!
+        Get started on your journey to business ownership with
+        <span class="franchise-agreement__accent">ICECREAM</span> today by filling out the form
+        below!
       </p>
       <form action="#">
         <div class="modals-wrap">
-        <div class="modal__forms">
-          <label class="label-franchise__text" for="user-name">First Name *</label>
-          <div class="franchise-input__thumb">
-            <input required type="text" placeholder="John" name="user-name" id="user-name" class="franchise-input-form" />
+          <div class="modal__forms">
+            <label class="label-franchise__text" for="user-first-name">First Name *</label>
+            <div class="franchise-input__thumb">
+              <input
+                required
+                type="text"
+                placeholder="John"
+                name="user-name"
+                id="user-first-name"
+                class="franchise-input-form"
+              />
+            </div>
+          </div>
+          <div class="modal__forms">
+            <label class="label-franchise__text" for="user-last-name">Last Name *</label>
+            <div class="franchise-input__thumb">
+              <input
+                required
+                type="text"
+                placeholder="Doe"
+                name="user-name"
+                id="user-last-name"
+                class="franchise-input-form"
+              />
+            </div>
+          </div>
+          <div class="modal__forms">
+            <label class="label-franchise__text" for="user-email">Email *</label>
+            <div class="franchise-input__thumb">
+              <input
+                required
+                type="email"
+                placeholder="johndoe@emaildomain.com"
+                name="user-email"
+                id="user-email"
+                class="franchise-input-form"
+              />
+            </div>
+          </div>
+          <div class="modal__forms">
+            <label class="label-franchise__text" for="user-tel">Phone *</label>
+            <div class="franchise-input__thumb">
+              <input
+                required
+                type="number"
+                placeholder="+1 432-212-3456"
+                name="user-tel"
+                id="user-tel"
+                class="franchise-input-form"
+              />
+            </div>
+          </div>
+          <div class="modal__forms">
+            <label class="label-franchise__text" for="user-city">City *</label>
+            <div class="franchise-input__thumb">
+              <input
+                type="text"
+                placeholder="San Diego, California"
+                name="user-city"
+                id="user-city"
+                class="franchise-input-form"
+              />
+            </div>
+          </div>
+          <div class="modal__forms">
+            <label class="label-franchise__text" for="user-appointment">Best time to call *</label>
+            <div class="franchise-input__thumb">
+              <input
+                type="text"
+                placeholder="Monday-Friday after 7pm"
+                name="user-appointment"
+                id="user-appointment"
+                class="franchise-input-form"
+              />
+            </div>
+          </div>
+          <div class="modal__forms">
+            <label class="label-franchise__text" for="user-finance"
+              >Do you and/or partners have $250,000 net worth?*
+            </label>
+            <div class="franchise-input__thumb">
+              <input
+                type="text"
+                placeholder="Yes"
+                name="user-finance"
+                id="user-finance"
+                class="franchise-input-form"
+              />
+            </div>
+          </div>
+          <div class="modal__forms">
+            <label class="label-franchise__text" for="user-assets"
+              >Do you and/or partners have $90,000 in liquid assets? *
+            </label>
+            <div class="franchise-input__thumb">
+              <input
+                type="text"
+                placeholder="Yes"
+                name="user-assets"
+                id="user-assets"
+                class="franchise-input-form"
+              />
+            </div>
           </div>
         </div>
-        <div class="modal__forms">
-          <label class="label-franchise__text" for="user-name">Last Name *</label>
-          <div class="franchise-input__thumb">
-            <input  required type="text" placeholder="Doe" name="user-name" id="user-name" class="franchise-input-form" />
-          </div>
-        </div>  
-        <div class="modal__forms">
-          <label class="label-franchise__text" for="user-email">Email *</label>
-          <div class="franchise-input__thumb">
-            <input required type="email" placeholder="johndoe@emaildomain.com" name="user-email" id="user-email" class="franchise-input-form" />
-          </div>
-        </div>
-        <div class="modal__forms">
-          <label class="label-franchise__text" for="user-tel">Phone *</label>
-          <div class="franchise-input__thumb">
-            <input required type="tel" placeholder="+1 432-212-3456" name="user-tel" id="user-tel" class="franchise-input-form" />
-          </div>
-        </div>
-        <div class="modal__forms">  
-          <label class="label-franchise__text" for="user-city">City *</label>
-          <div class="franchise-input__thumb">
-            <input type="text" placeholder="San Diego, California" name="user-city" id="user-city" class="franchise-input-form" />
-          </div>
-        </div>  
-        <div class="modal__forms">  
-          <label class="label-franchise__text" for="user-appointment">Best time to call *</label>
-          <div class="franchise-input__thumb">
-            <input
-              type="text"
-              placeholder="Monday-Friday after 7pm"
-              name="user-appointment"
-              id="user-appointment"
-              class="franchise-input-form"
-            />
-          </div>
-        </div>  
-        <div class="modal__forms">  
-          <label class="label-franchise__text" for="user-finance"
-            >Do you and/or partners have $250,000 net worth?*
-          </label>
-          <div class="franchise-input__thumb">
-            <input type="text" placeholder="Yes" name="user-finance" id="user-finance" class="franchise-input-form" />
-          </div>
-        </div>  
-        <div class="modal__forms">
-          <label class="label-franchise__text" for="user-assets"
-            >Do you and/or partners have $90,000 in liquid assets? *
-          </label>
-          <div class="franchise-input__thumb">
-            <input type="text" placeholder="Yes" name="user-assets" id="user-assets" class="franchise-input-form" />
-          </div>
-        </div>  
-        </div>
+
+        <p class="franchise__text">
+          By submitting your information
+          <span class="franchise-agreement__accent">you have agreed</span> to receive a Text Message
+          or a Phone Call from our franchising team.
+        </p>
+        <button class="franchise-submit__button" type="submit">
+          Submit<svg class="buy-now__button-svg" width="10" height="10">
+            <use href="./images/symbol-defs.svg#vector-arrow-white"></use>
+          </svg>
+        </button>
       </form>
-      <p class="franchise__text">
-        By submitting your information
-        <span class="franchise-agreement__accent">you have agreed</span> to receive a Text Message
-        or a Phone Call from our franchising team.
-      </p>
-      <button class="franchise-submit__button" type="submit">Submit<svg class="buy-now__button-svg" width="10" height="10">
-        <use href="./images/symbol-defs.svg#vector-arrow-white"></use>
-      </svg></button>
     </div>
-  
   </div>
 </div>
 <script src="./js/togle-map.js"></script>
