@@ -255,6 +255,7 @@
     height: 18px;
   }
 }
+
 .hero__icon-arrow {
   width: 10px;
   height: 10px;
@@ -376,7 +377,7 @@
   right: 35px;
   top: 94px; 
   padding-top: 50px;
-   
+  
   @media screen and (max-width: 767px) {
     display:none;
   }

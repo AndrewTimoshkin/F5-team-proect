@@ -101,13 +101,13 @@
     }
   }
 
+ 
+
   .container-header .button-buy {
     display: none;
     @media screen and (min-width: 768px) {
       width: 160px;
       height: 44px;
-      // padding-left: 38px;
-      // padding-right: 53px;
       display: inline-block;
       margin-left: 30px;
       // padding-top: 10px;
@@ -115,6 +115,15 @@
     }
     @media screen and (min-width: 1280px) {
       margin-left: 0px;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+      color: var(--secondary-accent-color);
+      background-color: #ECEBEB;
+      border: 1px;
     }
   }
 
@@ -136,7 +145,23 @@
     line-height: calc(21 / 16);
     color: var(--accent-color);
     margin-left: 0;
+   
   }
+
+  .modal--button {        
+    transition-property: background, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+.button-buy:hover,
+.button-buy:focus {
+    background:#ECEBEB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--white-text);
+}
+
 .button__icon {
   margin-left: 12px;
 }
