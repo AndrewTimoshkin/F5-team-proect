@@ -1,20 +1,19 @@
+.customer-reviews {
+  padding-bottom: 86px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 132px;
+  }
+}
+
 .swiper {
   position: relative;
 
   width: 100%;
   height: 100%;
-
-  padding-top: 80px;
-  padding-bottom: 86px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 28px;
-    padding-bottom: 132px;
-  }
 }
 
 .swiper-slide {

@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden" mob-modal desk-modal>
+<div class="backdrop is-hidden" data-mob-modal data-desk-modal>
     <div class="modal-window">
-        <button type="button" class="modal-window__close" mob-modal-close>
+        <button type="button" class="modal-window__close" data-mob-modal-close>
             <svg class="modal-window__close-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-close-modal"></use>
             </svg>
@@ -11,6 +11,7 @@
             <label class="data-name" for="user-name">Name
                 <span class="data-name-block">
                     <input class="data-name__field"
+                        required
                         type="text"
                         placeholder="Ivan Ivanov" 
                         name="user-name" 
@@ -21,13 +22,14 @@
                     </svg>
                 </span>
             </label>
-            <label class="data-name" for="user-tel">Cell phone
+            <label class="data-name" for="user-tell">Cell phone
                 <span class="data-name-block">
                     <input class="data-name__field"
+                        required
                         type="tel" 
                         placeholder="+380671111111" 
-                        name="user-tel" 
-                        id="user-tel"
+                        name="user-tell" 
+                        id="user-tell"
                         minlength="13"
                         maxlength="13"
                         title="+38067111111">
@@ -38,8 +40,9 @@
             </label>
             <label class="data-name" for="user-address">Delivery address
                 <span class="data-name-block">
-                    <input class="data-name__field" 
-                        type="address" 
+                    <input class="data-name__field"
+                        required 
+                        type="text" 
                         placeholder="26, Milk Ranco Avenue, Cowyland" 
                         name="user-address" 
                         id="user-address"
@@ -49,74 +52,86 @@
                     </svg>
                 </span>
             </label>
-            <div class="order-details">
-                <label class="order-details__taste data-name" for="">Select ice cream:
-                    <select class="order-details__item" name="ice-cream-list" size="1">
-                        <option value="Cream">Best one</option>
-                        <option value="Passioned cherries">Passioned cherries</option>
-                        <option value="Milky-Tweenky">Milky-Tweenky</option>
-                        <option value="Rainbow walk">Rainbow walk</option>
-                        <option value="Three cows party">Three cows party</option>
-                        <option value="Legend of Cowyland">Legend of Cowyland</option>
-                        <option value="Vanilla Boom">Vanilla Boom</option>
-                        <option value="Chocolat Paradise">Chocolat Paradise</option>
-                        <option value="">None</option>
-                    </select>
-                    <select class="order-details__item" name="ice-cream-list" size="1">
-                        <option value="Cream">Best one</option>
-                        <option value="Passioned cherries">Passioned cherries</option>
-                        <option value="Milky-Tweenky">Milky-Tweenky</option>
-                        <option value="Rainbow walk">Rainbow walk</option>
-                        <option value="Three cows party">Three cows party</option>
-                        <option value="Legend of Cowyland">Legend of Cowyland</option>
-                        <option value="Vanilla Boom">Vanilla Boom</option>
-                        <option value="Chocolat Paradise">Chocolat Paradise</option>
-                        <option value="">None</option>
-                    </select>
-                    <select class="order-details__item" name="ice-cream-list" size="1">
-                        <option value="Cream">Best one</option>
-                        <option value="Passioned cherries">Passioned cherries</option>
-                        <option value="Milky-Tweenky">Milky-Tweenky</option>
-                        <option value="Rainbow walk">Rainbow walk</option>
-                        <option value="Three cows party">Three cows party</option>
-                        <option value="Legend of Cowyland">Legend of Cowyland</option>
-                        <option value="Vanilla Boom">Vanilla Boom</option>
-                        <option value="Chocolat Paradise">Chocolat Paradise</option>
-                        <option value="">None</option>
-                    </select>
-                </label>
-                <label class="order-details__taste data-name" for="user-order-quantity">Select quantity:
-                    <select class="order-details__item" name="ice-cream-list-quantity" size="1">
-                        <option value=""></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                    </select>
-                    <select class="order-details__item" name="ice-cream-list-quantity" size="1">
-                        <option value=""></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                    </select>
-                    <select class="order-details__item" name="ice-cream-list-quantity" size="1">
-                        <option value=""></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                    </select>
-                </label>
+            <div class="order-details__block">
+                <div class="order-details__block-section">
+                    <label class="order-details__data-name">Select ice cream:
+                        <select class="order-details__item" name="ice-cream-list" size="1">
+                            <option value="Cream">Best one</option>
+                            <option value="Passioned cherries">Passioned cherries</option>
+                            <option value="Milky-Tweenky">Milky-Tweenky</option>
+                            <option value="Rainbow walk">Rainbow walk</option>
+                            <option value="Three cows party">Three cows party</option>
+                            <option value="Legend of Cowyland">Legend of Cowyland</option>
+                            <option value="Vanilla Boom">Vanilla Boom</option>
+                            <option value="Chocolat Paradise">Chocolat Paradise</option>
+                            <option value="">None</option>
+                        </select>
+                    </label>            
+                    <label class="order-details__data-name">
+                        <select class="order-details__item" name="ice-cream-list" size="1">
+                            <option value="Cream">Best one</option>
+                            <option value="Passioned cherries">Passioned cherries</option>
+                            <option value="Milky-Tweenky">Milky-Tweenky</option>
+                            <option value="Rainbow walk">Rainbow walk</option>
+                            <option value="Three cows party">Three cows party</option>
+                            <option value="Legend of Cowyland">Legend of Cowyland</option>
+                            <option value="Vanilla Boom">Vanilla Boom</option>
+                            <option value="Chocolat Paradise">Chocolat Paradise</option>
+                            <option value="">None</option>
+                        </select>
+                    </label>            
+                    <label class="order-details__data-name">
+                        <select class="order-details__item" name="ice-cream-list" size="1">
+                            <option value="Cream">Best one</option>
+                            <option value="Passioned cherries">Passioned cherries</option>
+                            <option value="Milky-Tweenky">Milky-Tweenky</option>
+                            <option value="Rainbow walk">Rainbow walk</option>
+                            <option value="Three cows party">Three cows party</option>
+                            <option value="Legend of Cowyland">Legend of Cowyland</option>
+                            <option value="Vanilla Boom">Vanilla Boom</option>
+                            <option value="Chocolat Paradise">Chocolat Paradise</option>
+                            <option value="">None</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="order-details__block-section">
+                    <label class="order-details__data-name">Select quantity:
+                        <select class="order-details__item" name="ice-cream-list-quantity" size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="none">None</option>
+                        </select>
+                    </label>           
+                    <label class="order-details__data-name">
+                        <select class="order-details__item" name="ice-cream-list-quantity" size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="none">None</option>
+                        </select>
+                    </label>           
+                    <label class="order-details__data-name">
+                        <select class="order-details__item" name="ice-cream-list-quantity" size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="none">None</option>
+                        </select>
+                    </label>
+                </div>
             </div>
             <label class="user-feedback" for="user-feedback">Comments
                 <textarea class="user-feedback-field" 
@@ -126,10 +141,12 @@
             </label>
             <div class="checkbox">
                 <input class="policy-condition-check visually-hidden"
+                        required
                         type="checkbox" 
                         name="policy" 
                         id="policy">
                 <label class="policy-condition" for="policy">Swear, I'll eat all ordered ice cream!
+                </label>
             </div>
             <div class="button-align">
                 <button class="buy-now-btn modal--button" type="submit">Buy</button>
