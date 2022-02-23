@@ -377,12 +377,10 @@
   right: 35px;
   top: 94px; 
   padding-top: 50px;
-   
-  @media screen and (max-width: 320px) {
+  
+  @media screen and (max-width: 767px) {
     display:none;
   }
-
-  
   @media screen and (min-width: 768px) {
     padding-top:1px;
   }

@@ -616,6 +616,13 @@ body {
   position: absolute;
   top: 80px;
   left: 60px;
+  }
+.footer__title-decor {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  color: #d41443;
   display: block;
   width: 344px;
   height: 344px;
@@ -702,6 +709,24 @@ body {
     -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
   }
+
+.social__item {
+  width: 32px;
+  height: 32px;
+  background-color: #fea5bb;
+  border-radius: 50%;
+  margin-right: 28.24px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__item:hover,
+.social__item:focus {
+  background-color: #d41443;
 }
 
 .hero__picture-girl {
